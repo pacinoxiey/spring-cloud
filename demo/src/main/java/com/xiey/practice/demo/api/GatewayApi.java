@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("gateWay")
 public class GatewayApi {
 
-    @GetMapping("/demo")
+    @GetMapping("demo")
     public String demo() {
         return "gateWay";
     }
 
-    @GetMapping("/value")
+    @GetMapping("value")
     public String value(@RequestParam("key") String key) {
         return key;
     }
@@ -26,4 +26,5 @@ public class GatewayApi {
     public String post(@RequestBody BaseReq req) {
         return req.getId();
     }
+
 }
