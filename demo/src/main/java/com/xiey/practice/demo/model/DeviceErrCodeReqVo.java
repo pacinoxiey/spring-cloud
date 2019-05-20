@@ -2,8 +2,7 @@ package com.xiey.practice.demo.model;
 
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.LocalDateTime;
+import lombok.ToString;
 
 /**
  * @author xiey
@@ -12,15 +11,27 @@ import java.time.LocalDateTime;
  */
 @Getter
 @Setter
-public class DeviceErrCodeReqVo extends ErrCodeVo {
+@ToString
+public class DeviceErrCodeReqVo {
 
     /**
-     * 错误信息
+     * 事件类型
      */
-    private String msg;
+    private String event;
+    /**
+     * 设备识别码
+     */
+    private String deviceId;
 
     /**
      * 故障时间
      */
-    private String time;
+    private Long timestamp;
+
+    /**
+     * data
+     */
+    private String data;
+
+
 }
