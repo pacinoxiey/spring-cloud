@@ -3,8 +3,7 @@ package com.xiey.practice.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = "com.xiey.practice.demo.api")
-
+@SpringBootApplication(scanBasePackages = "com.xiey.practice.demo")
 public class DemoApplication {
 
     public static void main(String[] args) {
