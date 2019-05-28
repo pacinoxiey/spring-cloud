@@ -1,5 +1,6 @@
 package com.xiey.practice.demo.api;
 
+import com.alibaba.fastjson.JSON;
 import com.xiey.practice.demo.model.DeviceErrCodeReqVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,8 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestApi {
 
     @PostMapping("test")
-    public void test(@RequestBody DeviceErrCodeReqVo reqVo) {
-        log.info("err-message:{}", reqVo);
+    public void test(@RequestBody String reqVo) {
+        log.error(reqVo);
     }
 
 }

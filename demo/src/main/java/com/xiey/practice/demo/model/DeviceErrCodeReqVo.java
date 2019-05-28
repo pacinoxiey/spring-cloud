@@ -31,7 +31,7 @@ public class DeviceErrCodeReqVo {
     /**
      * data
      */
-    private String data;
+    private Object data;
 
 
 }
