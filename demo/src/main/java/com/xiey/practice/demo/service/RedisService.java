@@ -34,7 +34,7 @@ public class RedisService implements MessageListener {
     public void onMessage(Message message, byte[] bytes) {
         String channel = new String(message.getChannel());
         String body = new String(message.getBody());
-        log.info("监听到消息: channel:{} body:{}", channel, body);
-
+        log.info("监听到消息: channel:{} body:{} byte:{}", channel, body, new String(bytes));
+        //业务处理
     }
 }
